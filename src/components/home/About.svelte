@@ -18,28 +18,27 @@
 </script>
 
 <div
-	class="w-screen py-36 px-64 bg-white hero-overlap z-30 flex flex-col align-middle justify-center items-center"
+	class="w-screen py-36 md:px-28 lg:px-64 bg-soft-white hero-overlap z-30 flex flex-col align-middle justify-center items-center"
 >
 	<div id="title-container flex flex-col">
 		<h1 class="text-6xl font-lato tracking-wider">Perfil Profesional</h1>
 		<span class="block h-[5px] w-[2.25rem] bg-slate-800"></span>
 	</div>
-	<div class="grid grid-cols-2 gap-24 mt-24 w-full">
-		<div class="h-[500px]">
+	<div class="grid grid-cols-2 gap-12 lg:gap-24 mt-24 w-full">
+		<div class="lg:h-[500px] h-[800px]">
 			<h2 class="font-lato text-5xl mb-8">Conoce mas de mi</h2>
 			<p class="text-lg">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ab iusto laudantium cum
-				aperiam nesciunt sed, modi tempora reprehenderit debitis et quis sunt exercitationem quidem
-				dignissimos nemo, nulla molestias labore provident! Repellendus doloribus possimus ea
-				reiciendis labore magnam, officiis beatae, facere accusamus inventore vitae incidunt!
-				Officiis error maiores eos culpa velit labore, necessitatibus vitae provident! Veniam quis
-				nulla repellat tempore voluptates necessitatibus expedita in dignissimos ipsam
-				reprehenderit, dolor mollitia facere culpa tenetur explicabo molestiae vel quos eaque. Quod
-				eveniet dicta blanditiis vitae sit quae, facilis dignissimos quas neque quos natus fugiat
-				pariatur. Odit, tempore enim. Aperiam sapiente dolor veritatis aut!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque corrupti eius beatae
+				voluptatibus, aspernatur temporibus eligendi asperiores porro error impedit necessitatibus
+				reiciendis magni iusto sit laborum recusandae mollitia nesciunt excepturi laudantium aut
+				assumenda culpa? Inventore, aliquid quidem architecto magnam voluptate eaque? Sit
+				necessitatibus accusantium voluptatibus enim aliquam dolore minus nulla beatae amet omnis
+				numquam ipsum debitis cum ducimus voluptates quas blanditiis mollitia voluptatem
+				reprehenderit esse alias ipsam, ratione nam natus? Rerum tempore maiores expedita voluptates
+				ducimus, et ea delectus?
 			</p>
 		</div>
-		<div class="h-[500px]">
+		<div class="lg:h-[500px] h-[800px]">
 			<h2 class="font-lato text-5xl mb-8">Herramientas que uso</h2>
 			<div class="flex flex-wrap">
 				{#each buttonNames as name, i}

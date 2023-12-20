@@ -5,6 +5,9 @@ export default {
 		extend: {
 			fontFamily: {
 				lato: ['Lato', 'sans-serif']
+			},
+			colors: {
+				'soft-white': '#f5f5f5'
 			}
 		}
 	},
