@@ -11,5 +11,6 @@ export default {
 			}
 		}
 	},
-	plugins: []
+	plugins: [],
+	safelist: ['bg-slate-700', 'bg-slate-800']
 };
