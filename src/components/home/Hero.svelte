@@ -21,7 +21,4 @@
 		overflow: hidden;
 		transform: scale(1.02);
 	}
-	.h-screen-fix {
-		height: calc(100vh - 3rem);
-	}
 </style>
