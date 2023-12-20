@@ -1,3 +1,22 @@
+<script lang="ts">
+	import Icon from './about/Icon.svelte';
+
+	const buttonNames = [
+		'linux',
+		'docker',
+		'python',
+		'java',
+		'typescript',
+		'golang',
+		'react',
+		'svelte',
+		'django',
+		'flask',
+		'firebase',
+		'discord'
+	];
+</script>
+
 <div
 	class="w-screen py-36 px-64 bg-white hero-overlap z-30 flex flex-col align-middle justify-center items-center"
 >
@@ -22,12 +41,15 @@
 		</div>
 		<div class="h-[500px]">
 			<h2 class="font-lato text-5xl mb-8">Herramientas que uso</h2>
-			<div class=""></div>
+			<div class="flex flex-wrap">
+				{#each buttonNames as name, i}
+					<Icon
+						iconUrl={'./' + name + '.svg'}
+						content={name.charAt(0).toUpperCase() + name.slice(1)}
+						index={i}
+					/>
+				{/each}
+			</div>
 		</div>
 	</div>
 </div>
-
-<style lang="scss">
-	.hero-overlap {
-	}
-</style>
