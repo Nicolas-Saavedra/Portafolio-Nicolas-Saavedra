@@ -10,7 +10,7 @@ declare module 'svelte-vertical-timeline' {
 	}
 
 	interface TimelineItemProps {
-		position: 'right' | 'left';
+		position?: 'right' | 'left';
 		style?: string;
 	}
 
