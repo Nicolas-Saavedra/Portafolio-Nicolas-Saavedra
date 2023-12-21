@@ -3,6 +3,7 @@
 	import Hero from '../components/home/Hero.svelte';
 	import Experience from '../components/home/Experience.svelte';
 	import Contact from '../components/home/Contact.svelte';
+	import Footer from '../components/Footer.svelte';
 </script>
 
 <section id="hero">
@@ -17,3 +18,4 @@
 <section id="contact">
 	<Contact />
 </section>
+<Footer />

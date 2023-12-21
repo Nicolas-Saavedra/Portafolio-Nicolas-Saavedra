@@ -39,7 +39,7 @@
 		<h1 class="text-6xl font-lato tracking-wider">Proyectos Realizados</h1>
 		<span class="block h-[5px] w-[2.25rem] bg-slate-800"></span>
 	</div>
-	<div id="timeline-wrapper" class="mt-16">
+	<div id="timeline-wrapper" class="mt-24">
 		<Timeline position="alternate">
 			{#each posts as post, i}
 				<TimelineItem>
