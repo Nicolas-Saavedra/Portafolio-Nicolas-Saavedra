@@ -13,5 +13,5 @@ export default {
 		}
 	},
 	plugins: [],
-	safelist: ['bg-slate-700', 'bg-slate-800']
+	safelist: ['text-slate-600', 'bg-slate-700', 'bg-slate-800', 'text-red-600']
 };

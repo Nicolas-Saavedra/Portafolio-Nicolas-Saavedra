@@ -2,22 +2,30 @@
 	<div
 		class="w-16 h-16 rounded-full bg-slate-800 flex items-center align-middle justify-center mr-8 animate-float"
 	>
-		<img src="./github.svg" class="w-10 h-10" alt="Github" />
+		<a href="https://github.com/Nicolas-Saavedra">
+			<img src="./github.svg" class="w-10 h-10" alt="Github" />
+		</a>
 	</div>
 	<div
 		class="w-16 h-16 rounded-full bg-slate-800 flex items-center align-middle justify-center mr-8 animate-float"
 	>
-		<img src="./linkedin.svg" class="w-8 h-8" alt="Linkedin" />
+		<a href="https://linkedin.com/in/nicolas-saavedra-03902821a">
+			<img src="./linkedin.svg" class="w-8 h-8" alt="Linkedin" />
+		</a>
 	</div>
 	<div
 		class="w-16 h-16 rounded-full bg-slate-800 flex items-center align-middle justify-center mr-8 animate-float"
 	>
-		<img src="./email.svg" class="w-12 h-12" alt="E-mail" />
+		<a href="mailto:personal@nicolassaavedra.com">
+			<img src="./email.svg" class="w-12 h-12" alt="E-mail" />
+		</a>
 	</div>
 	<div
 		class="w-16 h-16 rounded-full bg-slate-800 flex items-center align-middle justify-center animate-float"
 	>
-		<img src="./whatsapp.svg" class="w-10 h-10" alt="Whatsapp" />
+		<a href="https://wa.link/wub4yx">
+			<img src="./whatsapp.svg" class="w-10 h-10" alt="Whatsapp" />
+		</a>
 	</div>
 </div>
 
