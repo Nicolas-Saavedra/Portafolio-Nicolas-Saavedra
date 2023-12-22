@@ -19,10 +19,10 @@
 >
 	<div id="routes" class="font-lato font-bold text-md sm:text-lg md:text-xl">
 		{#if innerWidth > 400}
-			<a href="./#hero" class="mr-6 md:mr-24">Portada</a>
+			<a href="./#hero" class="mr-6 md:mr-20 lg:mr-24">Portada</a>
 		{/if}
-		<a href="./#about" class="mr-6 md:mr-24">Perfil</a>
-		<a href="./#experience" class="mr-6 md:mr-24">Proyectos</a>
+		<a href="./#about" class="mr-6 md:mr-20 lg:mr-24">Perfil</a>
+		<a href="./#experience" class="mr-6 md:mr-20">Proyectos</a>
 		<a href="./#contact">Contactame</a>
 	</div>
 </nav>

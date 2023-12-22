@@ -16,7 +16,7 @@
   text-white rounded-2xl mr-4 lg:mr-6 mt-6 shadow-sm
   ${widthClass} bg-slate-${index % 2 === 0 ? '700' : '800'}`}
 >
-	<img src={iconUrl} style="max-width: 28px;max-height: 28px;" class="mr-3" alt="Language" />
+	<img src={iconUrl} style="width: 28px;height: 28px;" class="mr-3" alt="Language" />
 	<p>
 		{content}
 	</p>
