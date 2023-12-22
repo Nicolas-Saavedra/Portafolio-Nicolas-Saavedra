@@ -10,7 +10,6 @@
 		TimelineSeparator
 	} from 'svelte-vertical-timeline';
 	import jsonPosts from '../../lib/posts.json';
-	import { onMount } from 'svelte';
 
 	let innerWidth = 9999;
 
@@ -24,16 +23,14 @@
 	const posts: Post[] = jsonPosts;
 	let calculatedImageHeights: number[] = [];
 
-	onMount(() => {
-		posts
-			.map((post) => {
-				return document.getElementById(post.title)! as HTMLImageElement;
-			})
-			.forEach((image) => {
-				calculatedImageHeights = [...calculatedImageHeights, image.height + 100];
-			});
-		calculatedImageHeights[calculatedImageHeights.length - 1] -= 100;
-	});
+	function handleImageLoad(event: Event, index: number) {
+		const imageElement = event.target as HTMLImageElement;
+		calculatedImageHeights[index] = imageElement.height;
+		if (index !== posts.length - 1) {
+			calculatedImageHeights[index] += 100;
+		}
+		console.log(calculatedImageHeights);
+	}
 </script>
 
 <div class="flex flex-col justify-center align-middle items-center py-36 md:px-28 xl:px-64">
@@ -74,6 +71,8 @@
 										src={post.imageUrl + '.jpg'}
 										alt={post.title + ' Image'}
 										loading="lazy"
+										class="w-full h-full"
+										on:load={(event) => handleImageLoad(event, i)}
 										style="max-height: 500px;"
 									/>
 								</picture>
@@ -95,6 +94,7 @@
 							src={post.imageUrl + '.jpg'}
 							alt={post.title + ' Image'}
 							loading="lazy"
+							class="w-full h-full"
 							style="max-height: 500px;"
 						/>
 					</picture>
