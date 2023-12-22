@@ -34,9 +34,9 @@
 	});
 </script>
 
-<div class="flex flex-col justify-center align-middle items-center py-36 md:px-28 lg:px-64">
+<div class="flex flex-col justify-center align-middle items-center py-36 md:px-28 xl:px-64">
 	<div id="title-container flex flex-col">
-		<h1 class="text-6xl font-lato tracking-wider">Proyectos Realizados</h1>
+		<h1 class="text-5xl lg:text-6xl font-lato tracking-wider">Proyectos Realizados</h1>
 		<span class="block h-[5px] w-[2.25rem] bg-slate-800"></span>
 	</div>
 	<div id="timeline-wrapper" class="mt-24">
@@ -44,8 +44,8 @@
 			{#each posts as post, i}
 				<TimelineItem>
 					<TimelineOppositeContent slot="opposite-content">
-						<h2 class="text-5xl font-lato tracking-wider">{post.title}</h2>
-						<p class="mt-8 text-xl">{@html post.content}</p>
+						<h2 class="text-3xl lg:text-4xl xl:text-5xl font-lato tracking-wider">{post.title}</h2>
+						<p class="mt-8 text-md lg:text-xl">{@html post.content}</p>
 					</TimelineOppositeContent>
 					<TimelineSeparator>
 						<TimelineDot
