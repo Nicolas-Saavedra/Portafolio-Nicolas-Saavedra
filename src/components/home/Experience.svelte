@@ -45,7 +45,7 @@
 				<TimelineItem>
 					<TimelineOppositeContent slot="opposite-content">
 						<h2 class="text-5xl font-lato tracking-wider">{post.title}</h2>
-						<p class="mt-8 text-xl">{post.content}</p>
+						<p class="mt-8 text-xl">{@html post.content}</p>
 					</TimelineOppositeContent>
 					<TimelineSeparator>
 						<TimelineDot
