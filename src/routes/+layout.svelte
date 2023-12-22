@@ -9,3 +9,8 @@
 <Navbar />
 
 <slot />
+
+<svelte:head>
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<title>Nicolas Saavedra</title>
+</svelte:head>
