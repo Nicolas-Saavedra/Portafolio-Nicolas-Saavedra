@@ -24,18 +24,21 @@
 		<h1 class="text-6xl font-lato tracking-wider">Perfil Profesional</h1>
 		<span class="block h-[5px] w-[2.25rem] bg-slate-800"></span>
 	</div>
-	<div class="grid grid-cols-1 md:grid-cols-2 sm:px-16 gap-12 lg:gap-24 mt-24 w-full xl:h-[500px]">
+	<div
+		class="grid grid-cols-1 md:grid-cols-2 sm:px-16 gap-12 lg:gap-24 mt-24 w-full xl:min-h-[500px]"
+	>
 		<div>
 			<h2 class="font-lato text-5xl mb-8">Conoce mas de mi</h2>
 			<p class="text-lg">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque corrupti eius beatae
-				voluptatibus, aspernatur temporibus eligendi asperiores porro error impedit necessitatibus
-				reiciendis magni iusto sit laborum recusandae mollitia nesciunt excepturi laudantium aut
-				assumenda culpa? Inventore, aliquid quidem architecto magnam voluptate eaque? Sit
-				necessitatibus accusantium voluptatibus enim aliquam dolore minus nulla beatae amet omnis
-				numquam ipsum debitis cum ducimus voluptates quas blanditiis mollitia voluptatem
-				reprehenderit esse alias ipsam, ratione nam natus? Rerum tempore maiores expedita voluptates
-				ducimus, et ea delectus?
+				Hola, soy Nicolás Saavedra González, estudiante en Ingeniería de Sistemas y Computación en
+				la Universidad de los Andes. Me especializo en el desarrollo full-stack de aplicaciones,
+				administración de servidores y en el campo crucial de la ciberseguridad. Mi enfoque está en
+				proporcionar soluciones tecnológicas completas, integrando eficiencia, funcionalidad y
+				seguridad.<br /><br /> Con habilidades en múltiples aspectos de la tecnología, me dedico a entender
+				y satisfacer las necesidades específicas de cada cliente. Mi objetivo es ofrecer servicios que
+				no solo resuelvan los desafíos actuales, sino que también anticipen las necesidades futuras.
+				Si busca un consultor o desarrollador comprometido con la excelencia, la innovación y la seguridad,
+				estaré encantado de colaborar en el éxito de su proyecto.
 			</p>
 		</div>
 		<div>
