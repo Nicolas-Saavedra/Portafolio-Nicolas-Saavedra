@@ -87,12 +87,18 @@
 		<div class="mt-24 mx-8">
 			{#each posts as post, i}
 				<div class="mb-16" id={post.title + i.toString()}>
-					<img
-						id={post.title}
-						src={post.imageUrl}
-						alt={post.title + ' Image'}
-						style="max-height: 500px;"
-					/>
+					<picture>
+						<source srcset={post.imageUrl + '.avif'} />
+						<source srcset={post.imageUrl + '.webp'} />
+						<img
+							id={post.title}
+							src={post.imageUrl + '.jpg'}
+							alt={post.title + ' Image'}
+							loading="lazy"
+							style="max-height: 500px;"
+						/>
+					</picture>
+
 					<h2 class="mt-8 text-3xl lg:text-4xl xl:text-5xl font-lato tracking-wider">
 						{post.title}
 					</h2>
