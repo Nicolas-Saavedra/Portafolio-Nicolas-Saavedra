@@ -1,6 +1,13 @@
-<div
-	class="h-screen w-screen bg-[url('/tea-background.jpg')] filter blur-sm blur-fix brightness-50 absolute -z-10 overflow-hidden"
-/>
+<picture>
+	<source srcset="/tea-background.avif" />
+	<source srcset="/tea-background.webp" />
+	<img
+		src="/tea-background.jpg"
+		alt="Hero Background"
+		class="h-screen w-screen filter blur-sm blur-fix brightness-50 absolute -z-10 overflow-hidden"
+	/>
+</picture>
+
 <hr class="h-2 w-0" />
 <div class="relative w-screen h-screen flex flex-col justify-center items-center z-40">
 	<picture>

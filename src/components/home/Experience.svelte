@@ -73,6 +73,7 @@
 										id={post.title}
 										src={post.imageUrl + '.jpg'}
 										alt={post.title + ' Image'}
+										loading="lazy"
 										style="max-height: 500px;"
 									/>
 								</picture>
