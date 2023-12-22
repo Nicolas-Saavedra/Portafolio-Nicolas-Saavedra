@@ -9,8 +9,8 @@
 		alt="Nicolas Saavedra's Profile"
 	/>
 	<hr class="w-64 md:w-96 my-8 h-[2px] bg-white" />
-	<h1 class="text-white text-6xl md:text-6xl text-bold font-lato mb-6">Nicolas Saavedra</h1>
-	<h2 class="text-white text-2xl w-3/5 md:w-2/5 text-center">
+	<h1 class="text-white text-4xl md:text-6xl text-bold font-lato mb-6">Nicolas Saavedra</h1>
+	<h2 class="text-white text-xl w-3/5 md:w-2/5 text-center">
 		Desarrollador Full-Stack con conocimiento amplio en bases de datos SQL y NoSQL, integración de
 		APIs externas, microservicios y modificación de juegos
 	</h2>

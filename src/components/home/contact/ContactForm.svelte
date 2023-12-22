@@ -143,7 +143,7 @@
 		</div>
 		<div class="mt-8 flex justify-center">
 			<button
-				class="font-source font-bold text-lg bg-slate-700 text-white py-4 px-6 rounded-3xl"
+				class="font-source font-bold text-md sm:text-lg bg-slate-700 text-white py-4 px-4 sm:px-6 rounded-3xl"
 				on:click={sendEmail}
 				disabled={isSubmitButtonDisabled}>Enviar Solicitud</button
 			>
