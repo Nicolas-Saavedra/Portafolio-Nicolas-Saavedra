@@ -66,12 +66,17 @@
 						</TimelineSeparator>
 						<TimelineContent>
 							<div id={post.title + i.toString()}>
-								<img
-									id={post.title}
-									src={post.imageUrl}
-									alt={post.title + ' Image'}
-									style="max-height: 500px;"
-								/>
+								<picture>
+									<source srcset={post.imageUrl + '.avif'} />
+									<source srcset={post.imageUrl + '.webp'} />
+									<img
+										id={post.title}
+										src={post.imageUrl + '.jpg'}
+										alt={post.title + ' Image'}
+										loading="lazy"
+										style="max-height: 500px;"
+									/>
+								</picture>
 							</div>
 						</TimelineContent>
 					</TimelineItem>
