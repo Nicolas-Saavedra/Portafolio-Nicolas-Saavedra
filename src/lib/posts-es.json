@@ -1,0 +1,17 @@
+[
+	{
+		"title": "Restructuracion de lenguage de programacion GOLD",
+		"content": "Se creo una alternativa para el lenguage de programacion GOLD usado por la Universidad de los Andes en la materia de Lenguages y Maquinas con el fin de otorgar una herramienta a los estudiantes con documentacion legible y facil de usar.<br><br><a class=\"text-slate-600 underline\" href=\"https://gold-python.github.io/GOLD-Python/\">Link to the proyect's main page</a>",
+		"imageUrl": "./gold"
+	},
+	{
+		"title": "Desarrollador Full-Stack Freelance",
+		"content": "Se hicieron proyectos Full Stack con clientes individuales utilizando herramientas de ultima generacion como Vue.js, Firebase y Golang para garantizar mantenibilidad a futuro plazo",
+		"imageUrl": "./fullstack"
+	},
+	{
+		"title": "Tutorias de Python en la Universidad de los Andes",
+		"content": "Se dieron tutorias a estudiantes en areas de programacion usando el lenguage de Python por medio de el centro de apoyo y aprendizaje Cupitaller en la Universidad de los Andes.",
+		"imageUrl": "./tutorias"
+	}
+]

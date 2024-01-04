@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Icon from './about/Icon.svelte';
+	import { _ } from 'svelte-i18n';
 
 	const buttonNames = [
 		'linux',
@@ -30,15 +31,7 @@
 		<div>
 			<h2 class="font-lato text-center sm:text-left text-5xl mb-8">Conoce mas de mi</h2>
 			<p class="text-lg">
-				Hola, soy Nicolás Saavedra González, estudiante en Ingeniería de Sistemas y Computación en
-				la Universidad de los Andes. Me especializo en el desarrollo full-stack de aplicaciones,
-				administración de servidores y en el campo crucial de la ciberseguridad. Mi enfoque está en
-				proporcionar soluciones tecnológicas completas, integrando eficiencia, funcionalidad y
-				seguridad.<br /><br /> Con habilidades en múltiples aspectos de la tecnología, me dedico a entender
-				y satisfacer las necesidades específicas de cada cliente. Mi objetivo es ofrecer servicios que
-				no solo resuelvan los desafíos actuales, sino que también anticipen las necesidades futuras.
-				Si busca un consultor o desarrollador comprometido con la excelencia, la innovación y la seguridad,
-				estaré encantado de colaborar en el éxito de su proyecto.
+				{@html $_('about.summary1') + $_('about.summary2')}
 			</p>
 		</div>
 		<div>

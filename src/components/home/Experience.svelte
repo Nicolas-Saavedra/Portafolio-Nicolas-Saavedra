@@ -9,7 +9,21 @@
 		TimelineOppositeContent,
 		TimelineSeparator
 	} from 'svelte-vertical-timeline';
-	import jsonPosts from '../../lib/posts.json';
+
+	import { locale } from 'svelte-i18n';
+	import { get } from 'svelte/store';
+	import { onMount } from 'svelte';
+
+	let posts: Post[];
+
+	onMount(async () => {
+		switch (get(locale)) {
+			case 'es':
+				posts = await import('../../lib/posts-es.json');
+			default:
+				posts = await import('../../lib/posts-en.json');
+		}
+	});
 
 	let innerWidth = 9999;
 
@@ -20,7 +34,6 @@
 		imageUrl: string;
 	};
 
-	const posts: Post[] = jsonPosts;
 	let calculatedImageHeights: number[] = [];
 
 	function handleImageLoad(event: Event, index: number) {
