@@ -2,7 +2,7 @@
 import { browser } from '$app/environment';
 import { init, register } from 'svelte-i18n';
 
-const defaultLocale = 'en';
+const defaultLocale = 'es';
 
 register('en', () => import('../../i18n/en.json'));
 register('es', () => import('../../i18n/es.json'));

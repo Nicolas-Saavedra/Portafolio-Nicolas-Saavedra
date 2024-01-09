@@ -1,0 +1,51 @@
+{
+	"navbar": {
+		"hero": "Portada",
+		"about": "Perfil",
+		"experience": "Proyectos",
+		"contact": "Contactame"
+	},
+	"meta": {
+		"description": "Pagina de portafolio para el desarrollador de software Nicolas Saavedra Gonzalez, estudiante de Ingenieria de Sistemas y Computacion"
+	},
+	"hero": {
+		"subtitle": "Desarrollador Full-Stack con conocimiento amplio en bases de datos SQL y NoSQL, integración de APIs externas, microservicios y modificación de juegos"
+	},
+	"about": {
+		"title": "Perfil Profesional",
+		"know": "Conoce mas de mi",
+		"tools": "Herramientas que uso",
+		"summary1": "Hola, soy Nicolás Saavedra González, estudiante en Ingeniería de Sistemas y Computación en la Universidad de los Andes. Me especializo en el desarrollo full-stack de aplicaciones, administración de servidores y en el campo crucial de la ciberseguridad. Mi enfoque está en proporcionar soluciones tecnológicas completas, integrando eficiencia, funcionalidad y seguridad.",
+		"summary2": "Con habilidades en múltiples aspectos de la tecnología, me dedico a entender y satisfacer las necesidades específicas de cada cliente. Mi objetivo es ofrecer servicios que no solo resuelvan los desafíos actuales, sino que también anticipen las necesidades futuras. Si busca un consultor o desarrollador comprometido con la excelencia, la innovación y la seguridad, estaré encantado de colaborar en el éxito de su proyecto."
+	},
+	"experience": {
+		"title": "Finished Projects"
+	},
+	"contact": {
+		"title": "Contactame",
+		"form": {
+			"name": "Nombre",
+			"name-hint": "Ingrese su nombre",
+			"name-err": "El nombre dado esta vacio",
+			"email": "Correo Electronico",
+			"email-hint": "Ingrese su correo electronico",
+			"email-err": "El correo dado no es valido",
+			"email-empty": "El correo dado esta vacio",
+			"reason": "Motivo",
+			"reason-hint": "Ingrese el motivo de su solicitud",
+			"consult-query": "Solicitud de Consulta",
+			"opportunity-query": "Oportunidades de Colaboración",
+			"education-query": "Consulta Educativa",
+			"other-query": "Otro Motivo",
+			"reason-empty": "Debe seleccionar un motivo de solicitud",
+			"aditional-info": "Informacion Adicional",
+			"aditional-info-hint": "Ingrese informacion adicional pertinente...",
+			"submit": "Enviar Solicitud",
+			"submit-success": "Su solicitud se ha procesado con exito",
+			"submit-failure": "Hubo problemas con su solicitud."
+		}
+	},
+	"footer": {
+		"description": "Made by hand in"
+	}
+}

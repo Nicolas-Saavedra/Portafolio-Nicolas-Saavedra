@@ -1,5 +1,6 @@
 <script lang="ts">
 	import emailjs from '@emailjs/browser';
+	import { _ } from 'svelte-i18n';
 
 	let name = '';
 	let email = '';
@@ -85,59 +86,70 @@
 >
 	<div class="flex flex-col">
 		<div class="mt-4">
-			<label class="block text-lg font-source font-bold" for="name">Nombre</label>
+			<label class="block text-lg font-source font-bold" for="name">{$_('contact.form.name')}</label
+			>
 			<input
 				class="block w-full h-12 py-2 px-4 mt-1 rounded-md bg-gray-200 outline-none"
 				id="name"
 				type="text"
-				placeholder="Ingrese su nombre"
+				placeholder={$_('contact.form.name-hint')}
 				bind:value={name}
 			/>
 			{#if isNameEmpty}
-				<small class="text-red-600 text-md">El nombre dado esta vacio</small>
+				<small class="text-red-600 text-md">{$_('contact.form.name-err')}</small>
 			{/if}
 		</div>
 		<div class="mt-4">
-			<label class="block text-lg font-source font-bold" for="email">Correo Electronico</label>
+			<label class="block text-lg font-source font-bold" for="email"
+				>{$_('contact.form.email')}</label
+			>
 			<input
 				class={`block w-full h-12 py-2 px-4 mt-1 rounded-md bg-gray-200 outline-none ${
 					isCurrentEmailValid ? '' : 'text-red-600'
 				}`}
 				id="email"
 				type="text"
-				placeholder="Ingrese su correo electronico"
+				placeholder={$_('contact.form.email-hint')}
 				bind:value={email}
 			/>
 			{#if isEmailInvalidOnSend}
-				<small class="text-red-600 text-md">El correo dado no es valido</small>
+				<small class="text-red-600 text-md">{$_('contact.form.email-err')}</small>
 			{/if}
 			{#if isEmailEmpty}
-				<small class="text-red-600 text-md">El correo dado esta vacio</small>
+				<small class="text-red-600 text-md">{$_('contact.form.email-emtpy')}</small>
 			{/if}
 		</div>
 		<div class="mt-4">
-			<label class="block text-lg font-source font-bold" for="reason">Motivo</label>
+			<label class="block text-lg font-source font-bold" for="reason"
+				>{$_('contact.form.reason')}</label
+			>
 			<select
 				class="block w-full h-12 py-2 px-4 mt-1 rounded-md bg-gray-200 outline-none"
 				id="reason"
-				placeholder="Ingrese el motivo de su solicitud"
+				placeholder={$_('contact.form.reason-hint')}
 				bind:value={reason}
 			>
-				<option value="Solicitud de Consulta">Solicitud de Consulta</option>
-				<option value="Oportunidades de Colaboración">Oportunidades de Colaboración</option>
-				<option value="Consulta Educativa">Consulta Educativa</option>
-				<option value="Otro Motivo">Otro Motivo</option>
+				<option value={$_('contact.form.consult-query')}>{$_('contact.form.consult-query')}</option>
+				<option value={$_('contact.form.opportunity-query')}
+					>{$_('contact.form.opportunity-query')}</option
+				>
+				<option value={$_('contact.form.education-query')}
+					>{$_('contact.form.education-query')}</option
+				>
+				<option value={$_('contact.form.other-query')}>{$_('contact.form.other-query')}</option>
 			</select>
 			{#if isReasonEmpty}
-				<small class="text-red-600 text-md">Debe seleccionar un motivo de solicitud</small>
+				<small class="text-red-600 text-md">{$_('contact.form.reason-empty')}</small>
 			{/if}
 		</div>
 		<div class="mt-4">
-			<label class="block text-lg font-source font-bold" for="content">Informacion Adicional</label>
+			<label class="block text-lg font-source font-bold" for="content"
+				>{$_('contact.form.aditional-info')}</label
+			>
 			<textarea
 				class="block w-full h-[250px] py-4 px-4 mt-1 rounded-md bg-gray-200 border-none resize-none outline-none"
 				id="content"
-				placeholder="Ingrese informacion adicional pertinente..."
+				placeholder={$_('contact.form.aditional-info-hint')}
 				bind:value={aditionalInfo}
 			/>
 		</div>
@@ -145,16 +157,14 @@
 			<button
 				class="font-source font-bold text-md sm:text-lg bg-slate-700 text-white py-4 px-4 sm:px-6 rounded-3xl"
 				on:click={sendEmail}
-				disabled={isSubmitButtonDisabled}>Enviar Solicitud</button
+				disabled={isSubmitButtonDisabled}>{$_('contact.form.submit')}</button
 			>
 		</div>
 		{#if isEmailSent}
-			<h2 class="text-lg mt-4 text-center text-green-600">
-				Su solicitud se ha procesado con exito
-			</h2>
+			<h2 class="text-lg mt-4 text-center text-green-600">{$_('contact.form.submit-success')}</h2>
 		{/if}
 		{#if isEmailError}
-			<h2 class="text-lg mt-4 text-center text-red-600">Hubo problemas con su solicitud.</h2>
+			<h2 class="text-lg mt-4 text-center text-red-600">{$_('contact.form.submit-failure')}</h2>
 		{/if}
 	</div>
 </form>
