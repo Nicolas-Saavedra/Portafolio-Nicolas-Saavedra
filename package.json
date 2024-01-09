@@ -37,6 +37,7 @@
   "type": "module",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "svelte-i18n": "^4.0.0",
     "svelte-vertical-timeline": "^1.0.0"
   }
 }

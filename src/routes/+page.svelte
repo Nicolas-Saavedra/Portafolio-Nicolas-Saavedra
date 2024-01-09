@@ -4,6 +4,7 @@
 	import Experience from '../components/home/Experience.svelte';
 	import Contact from '../components/home/Contact.svelte';
 	import Footer from '../components/Footer.svelte';
+	import { _ } from 'svelte-i18n';
 </script>
 
 <section id="hero">
@@ -19,3 +20,9 @@
 	<Contact />
 </section>
 <Footer />
+
+<svelte:head>
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<title>Nicolas Saavedra</title>
+	<meta name="description" content={$_('meta.description')} />
+</svelte:head>

@@ -1,0 +1,51 @@
+{
+	"navbar": {
+		"hero": "Hero",
+		"about": "About",
+		"experience": "Experience",
+		"contact": "Contact me"
+	},
+	"meta": {
+		"description": "Portfolio page for the software developer Nicolas Saavedra Gonzalez, a student of Systems and Computing Engineering"
+	},
+	"hero": {
+		"subtitle": "Full-Stack Developer with extensive knowledge in SQL and NoSQL databases, external API integration, microservices, and game modification"
+	},
+	"about": {
+		"title": "About Me",
+		"know": "Know more about me",
+		"tools": "Tools I frecuently use",
+		"summary1": "Hello, I am Nicolás Saavedra González, a student in Systems and Computing Engineering at the Universidad de los Andes. I specialize in full-stack application development, server administration, and the crucial field of cybersecurity. My focus is on providing complete technological solutions, integrating efficiency, functionality, and security.",
+		"summary2": "With skills in multiple aspects of technology, I am dedicated to understanding and meeting the specific needs of each client. My goal is to offer services that not only solve current challenges but also anticipate future needs. If you are looking for a consultant or developer committed to excellence, innovation, and security, I will be delighted to collaborate in the success of your project."
+	},
+	"experience": {
+		"title": "Finished Projects"
+	},
+	"contact": {
+		"title": "Contact Me",
+		"form": {
+			"name": "Name",
+			"name-hint": "Enter your name",
+			"name-err": "The given name is empty",
+			"email": "Email",
+			"email-hint": "Enter your email",
+			"email-err": "The given email is not valid",
+			"email-empty": "The given email is empty",
+			"reason": "Reason",
+			"reason-hint": "Enter the reason for your request",
+			"consult-query": "Consultation Request",
+			"opportunity-query": "Collaboration Opportunities",
+			"education-query": "Educational Inquiry",
+			"other-query": "Other Reason",
+			"reason-empty": "You must select a request reason",
+			"aditional-info": "Additional Information",
+			"aditional-info-hint": "Enter any relevant additional information...",
+			"submit": "Submit Request",
+			"submit-success": "Your request has been processed successfully",
+			"submit-failure": "There was a problem with your request."
+		}
+	},
+	"footer": {
+		"description": "Made by hand in"
+	}
+}

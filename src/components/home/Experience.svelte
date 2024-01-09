@@ -9,7 +9,20 @@
 		TimelineOppositeContent,
 		TimelineSeparator
 	} from 'svelte-vertical-timeline';
-	import jsonPosts from '../../lib/posts.json';
+
+	import { _, locale } from 'svelte-i18n';
+	import { get } from 'svelte/store';
+	import { onMount } from 'svelte';
+
+	let posts: Post[] = [];
+
+	onMount(async () => {
+		if (get(locale)?.includes('es')) {
+			posts = (await import('../../lib/posts-es.json')).default;
+		} else {
+			posts = (await import('../../lib/posts-en.json')).default;
+		}
+	});
 
 	let innerWidth = 9999;
 
@@ -20,7 +33,6 @@
 		imageUrl: string;
 	};
 
-	const posts: Post[] = jsonPosts;
 	let calculatedImageHeights: number[] = [];
 
 	function handleImageLoad(event: Event, index: number) {
@@ -36,7 +48,7 @@
 <div class="flex flex-col justify-center align-middle items-center py-36 md:px-28 xl:px-64">
 	<div id="title-container flex flex-col">
 		<h1 class="text-center sm:text-left text-5xl lg:text-6xl font-lato tracking-wider">
-			Proyectos Realizados
+			{$_('experience.title')}
 		</h1>
 		<span class="hidden sm:block h-[5px] w-[2.25rem] bg-slate-800"></span>
 	</div>
